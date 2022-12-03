@@ -1,27 +1,38 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const Schema  = mongoose.Schema
+const Schema = mongoose.Schema;
 
-const playlistSchema = new Schema({
-  audioTitle:{
+const userSchema = new Schema({
+  firstName: {
     type: String,
-    require: true
+    require: true,
   },
-  artistName:{
+  lastName: {
     type: String,
-    require: true
+    require: true,
   },
-  audio:{
+  userName: {
     type: String,
-    require: true
+    require: true,
   },
-  image:{
+  email: {
     type: String,
-    require: true
+    require: true,
   },
+  pNumber: {
+    type: Number,
+    require: true,
+  },
+  pword: {
+    type: String,
+    require: true,
+  },
+  cPword: {
+    type: String,
+    require: true,
+  }
+});
 
-},)
+const user = mongoose.model("user", userSchema);
 
-const playlist = mongoose.model('firstPlaylists', playlistSchema)
-
-module.exports = playlist
+module.exports = user;
