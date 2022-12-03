@@ -3,27 +3,72 @@
 
 A web application that allow users compare the content of excel files.
 
+## Table of contents
 
-## Name of Product
+- [Product Name](#product-name)
+  - [Sketch Demo](#sketch-demo)
+- [Technology Used](#technology-used)
+  - [Design Tools](#design-tools)
+  - [Tech Stack](#tech-stack)
+- [Why this Product?](#why-this-product)
+- [Features](#features)
+- [Links](#🔗-links)
+- [Documentation](#documentation)
+- [Development Environment](#development-environment-local)
+  - [System Requirements](#system-requirements)
+  - [Check if Node is installed](#to-check-if-node-is-installed)
+  - [Getting Started With Local Development](#getting-started-with-local-development)
+- [Authors](#authors)
+- [Acknowledgment](#acknowledgement)
+-[License](#license)
 
-.......
-## Why this product?
 
-Users, especially ones working with large excel files won't be able to check for duplicates. So, we created this simple `user friendly` web application that would enable them to work faster and efficiently.
+## Product Name
+KompareXL
+
+### Sketch Demo
+![setch demo](../Images/sketch-demo.png)
+
+## Technology Used
+
+### Design Tools
+Figma
+Dbdiagram
+
+### Tech Stack
+
+**Client:** HTML, CSS, JS, ReactJS 
+
+**Server:** NodeJS, Express, MongoDB
+
+
+## Why this Product?
+
+Users, especially ones working with excel files containing large amounts of data won't be able to check for duplicates and differences accurately. So, we created `KompareXL`, a simple user friendly web application that would enable users work faster and efficiently to speed productivity.
 It allow users to:
 
 * Upload csv / excel files 
 * Compare the content of the files
-* Make changes and perform series of other tasks
+* Make changes and perform series of other tasks like highlights, removal, etc.
+* Save progress for later
 * Export / download results.
+
+View [Documentation](#documentation) for more.
+
 ## Features
 
 - Upload csv / excel files
 - Highlight duplicates in files
 - Remove duplicates
 - Return a single file or two files (i.e result and/or original)
-- Save file (option to come to meet progress) 
+- Save file (option save progress for later) 
 - Download file
+
+## 🔗 Links
+
+- [Figma](https://www.figma.com/file/hpNXEvgc0RJQq9Zpa6bhzd/TeamCat2-Design)
+- [Data Schema](#)
+- [Live Site](#) // Live site goes here after deployment
 
 
 ## Documentation
@@ -33,7 +78,7 @@ View [Documentation](#)
 
 ## Development Environment (Local)
 
-#### System Requirements
+### System Requirements
 
 Before you begin, ensure you have the following installed:
 
@@ -41,14 +86,14 @@ Before you begin, ensure you have the following installed:
 - An IDE
 - Git
 
-#### To check if node is installed
+### To check if node is installed
 
 ```bash
   node --version
 ```
 Install the latest version [here](https://nodejs.org/en/)
 
-#### Getting Started With Local Development
+### Getting Started With Local Development
 
 Follow these simple instructions to set up a local development environment.
 
@@ -75,22 +120,14 @@ Follow these simple instructions to set up a local development environment.
   npm run start
 ```
 
-    
-## Tech Stack
-
-**Client:** React 
-
-**Server:** NodeJS, Express, MongoDB
-
-
-## 🔗 Links
-
-Will be updating..
 
 ## Authors
 
 - Team members [@Team-Cat2](https://github.com/orgs/zuri-training/teams/team-cat2/members)
 
+## Acknowledgement
+
+A huge thank you to the Zuri team and I4G for giving us the priviledge to take some steps higher is advancing our career in the tech space. Thank you to the mentors, we appreciate you all. 
 
 ## License
 
