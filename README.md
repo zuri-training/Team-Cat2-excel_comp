@@ -74,7 +74,7 @@ A web application that allow users compare the content of excel files.
 ## Product Name
 KompareXL
 
-### Sketch Demo
+### Sketch Demo 
 ![sketch demo](./Images/sketch-demo.png) ![sketch demo](./Images/sketch-demo2.png)
 
 ## Technology Used
@@ -84,11 +84,15 @@ KompareXL
 
 ### Tech Stack
 
-**Client:** ![html5-#E34F26](https://user-images.githubusercontent.com/72948572/183910382-06b2d259-2f17-4c4f-afb0-0ed20cddd85c.svg) ![css3-#1572B6](https://user-images.githubusercontent.com/72948572/183910424-215b3da2-9067-44ba-a16a-91eefc3d90fc.svg) ![javascript-#323330](https://user-images.githubusercontent.com/72948572/183910461-4e24a5f5-7ad9-48a0-a7b0-94bcba32a94b.svg) ![React](https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/frameworks/react.svg) 
+**Client:** <br> ![html5-#E34F26](https://user-images.githubusercontent.com/72948572/183910382-06b2d259-2f17-4c4f-afb0-0ed20cddd85c.svg) ![css3-#1572B6](https://user-images.githubusercontent.com/72948572/183910424-215b3da2-9067-44ba-a16a-91eefc3d90fc.svg) ![javascript-#323330](https://user-images.githubusercontent.com/72948572/183910461-4e24a5f5-7ad9-48a0-a7b0-94bcba32a94b.svg) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
 
-**Server:** NodeJS, Express, MongoDB
+**Server:** <br> ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![NPM](	https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
-**Project Management** ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
+**Database** <br> ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+**Authentication** <br> ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white) 
+
+**Project Management** <br> ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
 
 
 ## Why this Product?
