@@ -75,7 +75,7 @@ A web application that allow users compare the content of excel files.
 KompareXL
 
 ### Sketch Demo
-![sketch demo](./Images/sketch-demo.png.png)
+![sketch demo](./Images/sketch-demo.png)
 ![sketch demo](./Images/sketch-demo2.png)
 
 ## Technology Used
