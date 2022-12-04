@@ -3,7 +3,7 @@
 
 A web application that allow users compare the content of excel files.
 
-## Table of contents
+<!-- ## Table of contents
 
 - [Product Name](#product-name)
   - [Sketch Demo](#sketch-demo)
@@ -20,14 +20,63 @@ A web application that allow users compare the content of excel files.
   - [Getting Started With Local Development](#getting-started-with-local-development)
 - [Authors](#authors)
 - [Acknowledgment](#acknowledgement)
--[License](#license)
+-[License](#license) -->
 
+<details>
+    <summary><b>Table of Contents</b></summary>
+    <ul>
+        <li><a href="#product-name">Product Name</a>
+            <ul>
+                <li><a href="#sketch-demo">Sketch Demo</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="#technology-used">Technology Used</a>
+            <ul>
+                <li><a href="#design-tools">Design Tools</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="#why-this-product">Why this Product?</a></li>
+    </ul>
+    <ul>
+        <li><a href="#features">Features</a></li>
+    </ul>
+    <ul>
+        <li><a href="#🔗-links">Links</a></li>
+    </ul>
+    <ul>
+        <li><a href="#documentation">Documentation</a></li>
+    </ul>
+    <ul>
+        <li><a href="#development-environment-local">Development Environment</a>
+            <ul>
+                <li><a href="#system-requirements">System Requirements</a></li>
+                <li><a href="#to-check-if-node-is-installed">Check if Node is installed</a></li>
+                <li><a href="#getting-started-with-local-development">Getting Started With Local Development</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="#authors">Authors</a></li>
+    </ul>
+    <ul>
+        <li><a href="#acknowledgement">Acknowledgement</a></li>
+    </ul>
+    <ul>
+        <li><a href="#license">License</a></li>
+    </ul>
+</details>
 
 ## Product Name
 KompareXL
 
 ### Sketch Demo
-![setch demo](../Images/sketch-demo.png)
+![sketch demo](./Images/sketch-demo.png.png)
+![sketch demo](./Images/sketch-demo2.png)
 
 ## Technology Used
 
@@ -73,7 +122,7 @@ View [Documentation](#documentation) for more.
 
 ## Documentation
 
-View [Documentation](#)
+View [Documentation](https://docs.google.com/document/d/16jbtZdRiUadZQ8W-qdfYqybhE10SQpzUyC1eQFPA1ew/edit?usp=sharing)
 
 
 ## Development Environment (Local)
