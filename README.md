@@ -75,20 +75,20 @@ A web application that allow users compare the content of excel files.
 KompareXL
 
 ### Sketch Demo
-![sketch demo](./Images/sketch-demo.png)
-![sketch demo](./Images/sketch-demo2.png)
+![sketch demo](./Images/sketch-demo.png) ![sketch demo](./Images/sketch-demo2.png)
 
 ## Technology Used
 
 ### Design Tools
-Figma
-Dbdiagram
+![figma-#F24E1E](https://user-images.githubusercontent.com/72948572/183909728-8197f9c8-8b97-4015-8e0b-f8e605b19309.svg)
 
 ### Tech Stack
 
-**Client:** HTML, CSS, JS, ReactJS 
+**Client:** ![html5-#E34F26](https://user-images.githubusercontent.com/72948572/183910382-06b2d259-2f17-4c4f-afb0-0ed20cddd85c.svg) ![css3-#1572B6](https://user-images.githubusercontent.com/72948572/183910424-215b3da2-9067-44ba-a16a-91eefc3d90fc.svg) ![javascript-#323330](https://user-images.githubusercontent.com/72948572/183910461-4e24a5f5-7ad9-48a0-a7b0-94bcba32a94b.svg) ![React](https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/frameworks/react.svg) 
 
 **Server:** NodeJS, Express, MongoDB
+
+**Project Management** ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
 
 
 ## Why this Product?
@@ -116,13 +116,13 @@ View [Documentation](#documentation) for more.
 ## 🔗 Links
 
 - [Figma](https://www.figma.com/file/hpNXEvgc0RJQq9Zpa6bhzd/TeamCat2-Design)
-- [Data Schema](#)
+- [Data Schema](https://docs.google.com/document/d/11itXgR0bVN7G6St82LZl_3ehv8RApO0uYZAhCXEpB-M/edit)
 - [Live Site](#) // Live site goes here after deployment
 
 
 ## Documentation
 
-View [Documentation](https://docs.google.com/document/d/16jbtZdRiUadZQ8W-qdfYqybhE10SQpzUyC1eQFPA1ew/edit?usp=sharing)
+View [Documentation](https://docs.google.com/document/d/16jbtZdRiUadZQ8W-qdfYqybhE10SQpzUyC1eQFPA1ew/edit?usp=sharing) here
 
 
 ## Development Environment (Local)
