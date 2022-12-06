@@ -7,6 +7,21 @@ require('dotenv').config();
 const { SECRET } = process.env;
 
 
+exports.getLoggedInUser = async (req, res) => {
+    try {
+        const user = await user.findById(req.user.id).select('-password');
+        return res.json({
+            statusCode: 200,
+            message: 'User gotten successfully',
+            user
+        });
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error!');
+    }
+}
+
+
 // User login
 exports.loginUser = async (req, res) => {
     const errors = validationResult(req);

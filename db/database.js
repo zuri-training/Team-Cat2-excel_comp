@@ -40,7 +40,6 @@ const connectDB = async () => {
         // Seed data
     } catch (err) {
         console.error(err.message);
-
         process.exit(1);
     }
 }
