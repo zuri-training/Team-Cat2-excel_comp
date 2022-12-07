@@ -3,6 +3,10 @@
 
 A web application that allow users compare the content of excel files.
 
+<a href="https://github.com/zuri-training/Team-Cat2-excel_comp">
+   <img scr="https://github.com/zuri-training/Team-Cat2-excel_comp/blob/main/static/KompareXL-logo.png" alt="KompareXL logo">
+</a>
+
 <!-- ## Table of contents
 
 - [Product Name](#product-name)
