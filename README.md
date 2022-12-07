@@ -3,9 +3,7 @@
 
 A web application that allow users compare the content of excel files.
 
-<a href="https://github.com/zuri-training/Team-Cat2-excel_comp">
-   <img scr="https://github.com/zuri-training/Team-Cat2-excel_comp/blob/main/static/KompareXL-logo.png" alt="KompareXL logo">
-</a>
+![KompareXL logo](./static/KompareXL-logo.png)
 
 <!-- ## Table of contents
 
@@ -79,7 +77,7 @@ A web application that allow users compare the content of excel files.
 KompareXL
 
 ### Sketch Demo 
-![sketch demo](./Images/sketch-demo.png) ![sketch demo](./Images/sketch-demo2.png)
+![sketch demo](./static/sketch-demo.png) ![sketch demo](./static/sketch-demo2.png)
 
 ## Technology Used
 
