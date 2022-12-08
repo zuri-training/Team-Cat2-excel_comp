@@ -28,22 +28,22 @@ exports.loginUser = async (req, res) => {
     if (!errors.isEmpty())
     return res.status(400).json({ errors: errors.array() });
     
-    const { userName, password } = req.body;
+    const { email, password } = req.body;
 
     try {
-        let user = await user.findOne ({ userName: userName });
+        let user = await user.findOne ({ email: email });
 
         if (!user) 
         return res.status(400).json({ 
             status: 400, 
-            message: 'Invalid Username/Password' 
+            message: 'Invalid Email/Password' 
         });
 
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) 
         return res.status(400).json({
             statusCode: 400,
-            message: 'Invalid password'
+            message: 'Invalid Email/Password'
         });
 
         const payload = {
@@ -66,7 +66,7 @@ exports.loginUser = async (req, res) => {
                     user: {
                         firstName: user.firstName,
                         lastName: user.lastName,
-                        userName: user.userName
+                        email: user.email
                     },
                     token
                 })

@@ -10,11 +10,11 @@ const userSchema = mongoose.Schema(
             type: String,
             required: true
         },
-        userName: {
-            type: String,
-            required: true,
-            unique: true
-        },
+        // userName: {
+        //     type: String,
+        //     required: true,
+        //     unique: true
+        // },
         email: {
             type: String,
             required: true,
@@ -23,7 +23,14 @@ const userSchema = mongoose.Schema(
         password: {
             type: String,
             required: true
-        }
+        },
+        confirmPassword: {
+            type: String,
+            required: true
+        },
+    },
+    {
+        timestamps: true
     }
 );
 
