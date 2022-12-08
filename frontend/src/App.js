@@ -1,23 +1,20 @@
+import React from 'react'
+import Home from './pages/Home'
+import Signup from './pages/Signup'
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <div className="">
-      <header className="App-header">
-       
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element ={<Home/>} />
+      <Route path="/home" element ={<Home/>} />
+      <Route path="/signup" element ={<Signup/>} />
+  
+
+      
+    </Routes>
+  )
 }
 
-export default App;
+export default App
+
