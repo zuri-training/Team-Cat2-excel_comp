@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
        
         <div className='mb-2'>
-        <ul className='flex gap-8'>
+        <ul className='flex gap-8 cursor-pointer'>
                 <li>Privacy</li>
                 <li>Terms</li>
                 <li>Accessibility</li>
