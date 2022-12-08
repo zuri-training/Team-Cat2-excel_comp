@@ -3,7 +3,7 @@
 
 A web application that allow users compare the content of excel files.
 
-![KompareXL logo](./static/KompareXL-logo.png)
+![KompareXL logo](./static/Images/KompareXL-logo.png)
 
 <!-- ## Table of contents
 
@@ -77,7 +77,7 @@ A web application that allow users compare the content of excel files.
 KompareXL
 
 ### Sketch Demo 
-![sketch demo](./static/sketch-demo.png) ![sketch demo](./static/sketch-demo2.png)
+![sketch demo](./static/Images/demo1.png)
 
 ## Technology Used
 
@@ -121,7 +121,7 @@ View [Documentation](#documentation) for more.
 
 ## 🔗 Links
 
-- [Figma](https://www.figma.com/file/hpNXEvgc0RJQq9Zpa6bhzd/TeamCat2-Design)
+- [Figma](https://www.figma.com/file/DehtcTUqJCW8suCU0PefW6/TeamCat2-LoFi-and-HiFi-Design?node-id=2%3A1224)
 - [Data Schema](https://docs.google.com/document/d/11itXgR0bVN7G6St82LZl_3ehv8RApO0uYZAhCXEpB-M/edit)
 - [Live Site](#) // Live site goes here after deployment
 
