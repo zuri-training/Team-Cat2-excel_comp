@@ -1,35 +1,10 @@
-import React, { useState } from "react";
-import axios from "axios"
 
 function App() {
-  const [email, setEmail] = useState('')
-
-  const handleClick = (e) => {
-    e.preventDefault();
-
-    if (e.target.id === "email") {
-      setEmail(e.target.value)
-    }
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const dataToSubmit = {
-      email:email
-    }
-
-    axios.post("http://localhost:3000/api/sendMail", dataToSubmit)
-  }
-
   return (
     <div className="">
       <header className="App-header">
-
-        <form onSubmit={handleSubmit}>
-          <input id="email" placeholder="Email" value={email} onChange={handleClick} />
-          <button onClick={handleSubmit}>Submit</button>
-        </form>
-        {/* <p>
+       
+        <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -39,7 +14,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a> */}
+        </a>
       </header>
     </div>
   );

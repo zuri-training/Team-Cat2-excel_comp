@@ -1,6 +1,6 @@
 const express = require('express');
 const connectDB = require('./src/db/database');
-// const { PORT } = process.env;
+const { PORT } = process.env;
 
 require('dotenv').config();
 
@@ -16,8 +16,7 @@ app.use(express.json({extended: false }));
 // Create express route
 app.get('/', (req, res) => res.json({ message: 'Welcome to Excel Comp'}));
 
-//PORT
-// const port = process.env.PORT || PORT;
-const port = 3000
+//PORT 
+const port = process.env.PORT || PORT;
 
 app.listen(port, () => console.log(`server is listening on port ${port}`));
