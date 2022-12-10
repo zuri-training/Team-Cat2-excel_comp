@@ -26,12 +26,12 @@ const [showpassword, setShowPassword] = useState(false)
           </div>
           <div className='mb-7'>
             <h2>Full Name</h2>
-            <input className='border-2  px-8 py-2 w-[500px] h-[50px]' type="text" placeholder='Peter Roberts'/>
+            <input className='border-2  px-8 py-2 w-[500px] h-[50px] placeholder:text-xs' type="text" placeholder='Peter Roberts'/>
           </div>
           <div className='mb-7'>
             <h2>Email Address</h2>
           
-            <input className='border-2  px-8 py-2 w-[500px] h-[50px]' type="email" placeholder='example@gmail.com' />
+            <input className='border-2  px-8 py-2 w-[500px] h-[50px] placeholder:text-xs' type="email" placeholder='example@gmail.com' />
           </div>
           <div className='mb-7'>
             <h2>Password</h2>
@@ -53,7 +53,7 @@ const [showpassword, setShowPassword] = useState(false)
         <div className='mb-4'>
           <button className='bg-[#006400]  w-[500px] h-[50px] text-white mt-[53px]'>Create Account</button>
           <p className='text-center mt-6'>Already have an account? 
-          <Link to='/login' className='underline'>
+          <Link to='/login' className='underline text-[#006400] ml-2'>
           Log in
           </Link> 
           

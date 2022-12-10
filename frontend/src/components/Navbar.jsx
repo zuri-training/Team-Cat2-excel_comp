@@ -4,6 +4,7 @@ import {RxHamburgerMenu} from 'react-icons/rx'
 import Logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -19,13 +20,35 @@ const[dropdown,setDropdown] = useState(false)
         </Link>
         
         <div className='flex items-center px-4 gap-6 '>
-            <ul className='flex gap-4 '>
-                <li className='px-4 text-[#c76e29] rounded-md'>Home</li>
-                <li className='px-4 hover:text-[#c76e29] text-[#006400] rounded-md'>Products</li>
-                <li className='px-4 hover:text-[#c76e29] text-[#006400] rounded-md'>Support</li>
-                <li className='px-4 hover:text-[#c76e29] text-[#006400] rounded-md'>About</li>
-                <li className='px-4 hover:text-[#c76e29] text-[#006400] rounded-md'>Contact Us</li>
-            </ul>
+            <div className='flex gap-4 '>
+               
+              <NavLink to= "/"  className={({ isActive }) =>
+                isActive ? "px-4 hover:text-[#c76e29] text-[#c76e29] hover:scale-110 transition-all ease-in duration-200" : "px-4 hover:text-[#c76e29] text-[#006400] hover:scale-110 transition-all ease-in duration-200"
+              }>
+               Home
+              </NavLink>
+              <NavLink to= "/products"  className={({ isActive }) =>
+                isActive ? "px-4 hover:text-[#c76e29] text-[#c76e29] hover:scale-110 transition-all ease-in duration-200" : "px-4 hover:text-[#c76e29] text-[#006400] hover:scale-110 transition-all ease-in duration-200"
+              }>
+               Products
+              </NavLink>
+              <NavLink to= "/support"  className={({ isActive }) =>
+                isActive ? "px-4 hover:text-[#c76e29] text-[#c76e29] hover:scale-110 transition-all ease-in duration-200" : "px-4 hover:text-[#c76e29] text-[#006400] hover:scale-110 transition-all ease-in duration-200"
+              }>
+               Support
+              </NavLink>
+              <NavLink to= "/about"  className={({ isActive }) =>
+                isActive ? "px-4 hover:text-[#c76e29] text-[#c76e29] hover:scale-110 transition-all ease-in duration-200" : "px-4 hover:text-[#c76e29] text-[#006400] hover:scale-110 transition-all ease-in duration-200"
+              }>
+                About Us
+              </NavLink>
+              <NavLink to= "/contact"  className={({ isActive }) =>
+                isActive ? "px-4 hover:text-[#c76e29] text-[#c76e29] hover:scale-110 transition-all ease-in duration-200" : "px-4 hover:text-[#c76e29] text-[#006400] hover:scale-110 transition-all ease-in duration-200"
+              }>
+                Contact
+              </NavLink>
+                
+            </div>
             <div className='flex flex-col relative'>
 
               <button onClick={()=>setDropdown(!dropdown)}>
@@ -34,7 +57,7 @@ const[dropdown,setDropdown] = useState(false)
               </button>
               <div className={ dropdown ? 'flex flex-col px-4 py-4 text-sm gap-2 absolute w-24 rounded-md shadow-lg top-10 bg-white ease-in transition-all duration-200':' invisible px-4 py-4 text-sm gap-2 absolute w-24 rounded-md shadow-lg  bg-white top-[50px]'}>
                 <Link to = "/signup">Sign Up</Link>
-                <Link to = "/signup">Login</Link>
+                <Link to = "/login">Login</Link>
               </div>
               
             </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 
-import Eight from '../assets/imageight.png'
+import Eight from '../assets/dwnl.png'
 import Ten from '../assets/imageten.png'
-import Compare from '../assets/laptop.png'
+import Compare from '../assets/lappy.png'
 import Four from '../assets/imagefour.png'
+import Typed from 'react-typed'
+import { useState } from 'react'
 
 
 
@@ -13,9 +15,21 @@ import Four from '../assets/imagefour.png'
 
 const landing = () => {
   return (
-    <div className='px-[80px]'>
+    <div className='px-[80px] flex flex-col items-center mt-10 bg-gray-50 pt-20'>
       <div>
-        <p className='text-2xl font-medium mb-6'>Avoid spending time and effort on <br />manually duplicating of files to avoid <br />overwriting and losing datas <br />with the help of KompareXL</p>
+      <h1 className='font-bold text-4xl text-[#006400] mb-6 text-center'>How it Works</h1>
+        <p className='text-xl font-light text-center'>With KompareXl you can save time and effort by <Typed
+      className='font-bold text-xl text-[#006400]'
+      strings={[
+            "Uploading",
+            "Comparing",
+            "Duplicating",
+            "Downloading",
+          ]}
+          typeSpeed={150}
+          backSpeed={100}
+          loop
+        /> files </p>
       </div>
 
       <div className='flex py-[80px] text-center text-2xl font-bold mb-6 text-[#006400] justify-center'>
