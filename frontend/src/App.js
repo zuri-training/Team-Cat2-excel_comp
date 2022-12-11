@@ -13,6 +13,8 @@ import Account from './pages/Dashboard pages/Account'
 import Newtask from './pages/Dashboard pages/Newtask'
 import Compare from './pages/Dashboard pages/Compare'
 import Profile from './pages/Dashboard pages/Profile'
+import Error from './pages/Error'
+import Duplicate from './pages/Dashboard pages/Duplicate'
 
 
 const App = () => {
@@ -27,16 +29,17 @@ const App = () => {
       <Route path='/products' element={<Products/>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='/support' element={<Support />} />
-  
-    {/* <Route path="*" element = {<Error/>} /> */}
+      <Route path="*" element = {<Error/>} />
   
         <Route path='/account' element={<Account />}>
 
           <Route path='/account/dashboard' element={<Dashboard/>} />
           <Route path='/account/newtask' element={<Newtask/>} >
             <Route path='/account/newtask/compare' element={<Compare/>} />
+            <Route path='/account/newtask/duplicate' element={<Duplicate/>} />
           </Route>
           <Route path='/account/profile' element={<Profile/>} />
+          
         </Route>
       
     </Routes>
