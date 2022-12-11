@@ -1,5 +1,6 @@
 const express = require('express');
-const connectDB = require('./src/db/database');
+const connectDB = require('./db/database');
+const userRoutes = require('./routes/userRoute');
 const { PORT } = process.env;
 
 require('dotenv').config();
@@ -9,6 +10,8 @@ connectDB;
 
 // Initialize express
 const app = express();
+
+app.use('/api/auth', userRoutes);
 
 // Initialize middleware
 app.use(express.json({extended: false }));

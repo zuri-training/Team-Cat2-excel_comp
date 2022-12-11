@@ -1,11 +1,66 @@
 const User = ('../models/user');
 const { validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
-const user = require('../models/user');
+const bcrypt = require('bcrypt');
 require('dotenv').config();
 const { SECRET } = process.env;
+const expiry = 36000;
 
+
+exports.registerNewUser = (req, res) => {
+    User.findOne({ email: req.body.email }, (err, existingUser) => {
+        if (err) {
+            return res.status(500).json({ err })
+        }
+        if (existingUser) {
+            return res.status(400).json({
+                status: 400,
+                message: 'User with this email already exists'
+            })
+        }
+        User.create({
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: req.body.password
+        }, (err, newUser) => {
+            if (err) {
+                return res.status(500).json({ err })
+            }
+            bcrypt.genSalt(10, (err, salt) => {
+                if (err) {
+                    return res.status(500).json({ err })
+                }
+                bcrypt.hash(req.body.password, salt, (err, hashedPassword) => {
+                    if (err) {
+                        return res.status(500).json({ err })
+                    }
+                    newUser.password = hashedPassword;
+                    newUser.save((err, savedUser) => {
+                        if (err) {
+                            return res.status(500).json({ err })
+                        }
+                        jwt.sign(
+                            {
+                            id: newUser._id,
+                            firstName: newUser.firstName,
+                            lastName: newUser.lastName,
+                            email: newUser.email
+                        }, SECRET, {expiresIn: expiry}, (err, token) => {
+                            if (err) {
+                                return res.status(500).json({ err })
+                            }
+                            return res.status(200).json({
+                                message: 'Registration Successful',
+                                token
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+}
 
 exports.getLoggedInUser = async (req, res) => {
     try {
@@ -31,7 +86,7 @@ exports.loginUser = async (req, res) => {
     const { email, password } = req.body;
 
     try {
-        let user = await user.findOne ({ email: email });
+        let user = await user.findOne ({ email: req.body.email });
 
         if (!user) 
         return res.status(400).json({ 
@@ -56,13 +111,13 @@ exports.loginUser = async (req, res) => {
             payload,
             SECRET,
             {
-                expiresIn: 360000,
+                expiresIn: expiry,
             },
             (err, token) => {
                 if (err) throw err;
                 res.json({
                     statusCode: 200,
-                    message: 'Logeed in Sucessfully',
+                    message: 'Logged in Sucessfully',
                     user: {
                         firstName: user.firstName,
                         lastName: user.lastName,
