@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.all{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.ftext{
+    color: green;
+    text-align: center;
+    margin: auto;
+}
+
+.fstp{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    margin-top: 10px;
+}
+
+.whte{
+    box-sizing: border-box;
+    width: 1000px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 343px;
+    border: 1px solid #000000;
+    margin-bottom: 50px;
+}
+
+.step{
+    margin-left: 130px;
+    margin-right: 20px;
+}
+
+.steptxt{
+    border: 1px solid #2B7E2B;
+    background-color: #2B7E2B;
+    width: 1000px;
+    height: 124px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.xlimg{
+    width: 700px;
+    height: 270px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.stept{
+    border: 1px solid  #EE934A;
+    background-color: #EE934A;
+    width: 1000px;
+    height: 124px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stepx{
+    border: 1px solid #2B7E2B;
+    background-color: #2B7E2B;
+    width: 1000px;
+    height: 124px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stepl {
+    border: 1px solid #EE934A;
+    background-color: #EE934A;
+    width: 1000px;
+    height: 124px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text{
+        line-height: 2rem;
+        padding-left: 108px;
+        box-sizing: border-box;
+}
+
+.h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        /* or 38px */
+        align-items: center;
+        text-align: center;
+        color: #2B7E2B;
+        margin-bottom: 15px;
+    }
+
+    .1, .2, .3, .4 {
+        margin-bottom: 30px;
+        line-height: 1rem;
+    }
+
+        @media only screen and (max-width: 400px) {
+            .all {
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+        } 
