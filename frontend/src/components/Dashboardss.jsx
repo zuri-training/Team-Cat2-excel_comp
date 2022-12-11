@@ -12,11 +12,11 @@ const Dashboardss = () => {
       <Navbar />
       <div className='font-manrope py-4 cursor-pointer'>
         <div className='w-[10%] py-8 px-4 border border-[#006400] rounded-[5px] ml-2'>
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-4 cursor-pointer hover:scale-110 transition-all ease-in duration-200'>
                 <RxDashboard className='mb-8' />
                 < p className='mb-8'>Dashboard</ p>
             </div>
-           <div  className='flex items-center gap-4'>
+           <div  className='flex items-center gap-4 cursor-pointer hover:scale-110 transition-all ease-in duration-200'>
                 <MdTask className='mb-8'/>
                 < p className='mb-8'>New Task</ p>
            </div>

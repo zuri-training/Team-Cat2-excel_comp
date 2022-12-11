@@ -12,6 +12,7 @@ import Dashboard from './pages/Dashboard pages/Dashboard'
 import Account from './pages/Dashboard pages/Account'
 import Newtask from './pages/Dashboard pages/Newtask'
 import Compare from './pages/Dashboard pages/Compare'
+import Profile from './pages/Dashboard pages/Profile'
 
 
 const App = () => {
@@ -35,7 +36,7 @@ const App = () => {
           <Route path='/account/newtask' element={<Newtask/>} >
             <Route path='/account/newtask/compare' element={<Compare/>} />
           </Route>
-
+          <Route path='/account/profile' element={<Profile/>} />
         </Route>
       
     </Routes>
