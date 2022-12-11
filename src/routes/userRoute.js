@@ -34,11 +34,11 @@ const usersController = require("../controllers/usersController");
 // Authentication middleware in any route for example:
 // router("/home", auth , getHome)
 
-router.get("/login", (req, res) => {
+router.get("/register", (req, res) => {
   res.render("show register page")
 });
 
-router.post("/login",(req, res) => {
+router.post("/register",(req, res) => {
   const newUser = new User({
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -64,13 +64,12 @@ router.get("/login", (req, res) => {
 
 router.post("/login", (req, res) => {
   passport.authenticate("local", { successRedirect: "/home route", failureRedirect: "/register" }), (req, res) => {
-        
   }
 });
 
 router.post("/logout",(req, res) => {
   req.logout();
-  res.redirect("")
+  res.redirect("/")
 });
 
 
