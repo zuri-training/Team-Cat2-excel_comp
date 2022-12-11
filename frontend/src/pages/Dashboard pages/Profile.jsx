@@ -313,7 +313,7 @@ const Profile = () => {
                             <input className='border-2  h-[50px] pl-8 w-[100%]' type={showpassword ?"text":"password"} placeholder='**********' value={password} onChange = {(e)=>setPassword(e.target.value)} required/>
                             {showpassword ? <AiFillEyeInvisible className='w-[10%] absolute right-4 cursor-pointer' onClick={()=>setShowPassword(!showpassword)} /> : <AiFillEye className='w-[10%] absolute right-4 cursor-pointer' onClick={()=>setShowPassword(!showpassword)} /> }
                         </div>
-                        <div>
+                        <div className='py-4'>
                             <button className='bg-[#006400] text-white w-[128px] h-[48px] mt-4 rounded-lg'>Save</button>
                         </div>
             </form>
