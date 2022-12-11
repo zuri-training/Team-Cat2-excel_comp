@@ -37,7 +37,7 @@ const Contact = () => {
           </form>
           
         </div>
-        <div className='border-2 p-4 border-[#006400] mt-4 '>
+        <div className='border-2 p-4 border-[#006400] mt-4 flex flex-col gap-6'>
               <div className='flex gap-4'>
                 <BsTelephoneFill/>
                 <p>+ 234 70 ******</p>

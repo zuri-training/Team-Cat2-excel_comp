@@ -5,6 +5,7 @@ import excel from '../assets/image3.png'
 import furlan from '../assets/image2.png'
 import table from '../assets/table.png'
 import Footer from '../components/Footer'
+import white from '../assets/whte.png'
 
 const Support = () => {
     return(
@@ -15,23 +16,23 @@ const Support = () => {
                 <div className='text-center py-4 '>
                     <h1 className='font-bold text-xl text-[#006400] mb-4'>How to <span className='text-[#ea7d26]'>COMPARE</span> and <span className='text-[#ea7d26]'>DIFFERENTIATE</span> between two excel sheets</h1>
                     <p className='text-[#006400] text-lg'>Compare your excel files in <span className='text-[#ea7d26]'>FOUR</span> easy steps</p>
-                    <img src='' alt="" />
+                    <img className='w-[70%] m-auto' src={white} alt="/" />
                 </div>
                 <div className='mb-4'>
                     <h1 className='bg-[#006400] text-white py-4 px-4'>STEP 1: UPLOAD YOUR FILES</h1>
-                    <img className='w-[80%]' src={sheet} alt="" />
+                    <img className='w-[80%] m-auto' src={sheet} alt="" />
                 </div>
                 <div className='mb-4'>
                     <h1 className='bg-[#ea7d26] text-white py-4 px-4'>STEP 2: CLICK ON THE "COMPARE SHEET" BUTTON</h1>
-                    <img className='w-[80%]' src={excel} alt="" />
+                    <img className='w-[80%] m-auto' src={excel} alt="" />
                 </div>
                 <div className='mb-4'>
                     <h1 className='bg-[#006400] text-white py-4 px-4'>SETP 3: SEE THE TWO COMPARED SHEETS</h1>
-                    <img className='w-[80%]' src={furlan} alt="" />
+                    <img className='w-[80%] m-auto' src={furlan} alt="" />
                 </div>
                 <div mb-4>
                     <h1 className='bg-[#ea7d26] text-white py-4 px-4'>STEP 4: CLICK ON THE "DOWNLOAD" BUTTON TO EITHER <br />DOWNLOAD NOW OR SAVE FOR LATER</h1>
-                    <img className='w-[80%]' src={table} alt="" />
+                    <img className='w-[80%] m-auto' src={table} alt="" />
                 </div>
             </div>
            <div className='flex flex-col leading-10 justify-center items-center py-4'>
