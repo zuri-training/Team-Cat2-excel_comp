@@ -24,9 +24,16 @@ const [showpassword, setShowPassword] = useState(false)
             <FcGoogle />
             <p className='ml-4 text-center'>Sign up with Google</p>
           </div>
-          <div className='mb-7'>
-            <h2>Full Name</h2>
-            <input className='border-2  px-8 py-2 w-[500px] h-[50px] placeholder:text-xs' type="text" placeholder='Peter Roberts'/>
+          <div>
+            <div className='mb-7'>
+            <h2>First Name</h2>
+            <input className='border-2  px-8 py-2 w-[500px] h-[50px] placeholder:text-xs' type="text" placeholder='Peter'/>
+            </div>
+            <div className='mb-7'>
+            <h2>Last Name</h2>
+            <input className='border-2  px-8 py-2 w-[500px] h-[50px] placeholder:text-xs' type="text" placeholder='Roberts'/>
+            </div>
+          
           </div>
           <div className='mb-7'>
             <h2>Email Address</h2>

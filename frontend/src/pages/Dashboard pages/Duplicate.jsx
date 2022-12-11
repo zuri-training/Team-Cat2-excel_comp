@@ -5,7 +5,9 @@ import button from '../../assets/btn.png'
 import {BsFunnel} from 'react-icons/bs'
 import {RiArrowDropDownLine} from 'react-icons/ri'
 import {HiOutlineUpload} from 'react-icons/hi'
-import scroll from '../../assets/scroll.png'
+import scroll from '../../assets/mode.png'
+import scrol from '../../assets/scroll.png'
+import duplicate from '../../assets/group31.png'
 
 const Duplicate = () => {
   return (
@@ -28,7 +30,18 @@ const Duplicate = () => {
             </div>
         </div>
         <div>
-            <img className='w-[1002px]' src={scroll} alt="" />
+            <img className='w-[1002px] mb-12'  src={scroll} alt="" />
+            <img className='w-[1002px]' src={scrol} alt="" />
+        </div>
+        <div>
+          <div>
+            <button>Clear</button>
+            <img src={duplicate} alt="" />
+          </div>
+          <div>
+            <button>Save</button>
+            <button>Download</button>
+          </div>
         </div>
       
     </div>
