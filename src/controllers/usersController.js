@@ -8,7 +8,7 @@ const expiry = 36000;
 
 
 exports.registerNewUser = (req, res) => {
-    User.findOne({ email: req.body.email }, (err, existingUser) => {
+    User.findOne ({ email: req.body.email }, (err, existingUser) => {
         if (err) {
             return res.status(500).json({ err })
         }
@@ -86,7 +86,7 @@ exports.loginUser = async (req, res) => {
     const { email, password } = req.body;
 
     try {
-        let user = await user.findOne ({ email: req.body.email });
+        let user = await user.findOne ({ email: email });
 
         if (!user) 
         return res.status(400).json({ 

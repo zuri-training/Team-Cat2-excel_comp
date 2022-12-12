@@ -3,6 +3,10 @@ const connectDB = require('./db/database');
 const userRoutes = require('./routes/userRoute');
 const { PORT } = process.env;
 
+// const bodyparser = require('body-parser');
+// app.use(bodyparser.urlencoded({ extended: true }));
+// app.use(bodyparser.json({limit: '10mb'}));
+
 require('dotenv').config();
 
 // Connect to database
