@@ -42,22 +42,22 @@ const Dashboard = () => {
 
 
             <div className='flex flex-col items-center border-[3px] border-[#BF590A] rounded-md pt-[11px] pb-[83px] w-[25%]'>
-              <h4 className='font-[800] text-[18px] text-[#006400]'>Task Name</h4>
-              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-9'>Code 101</p>
-              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-2'>Code 101</p>
+              <h4 className='font-[800] text-[18px] text-[#006400]'>Format</h4>
+              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-9'>crv</p>
+              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-2'>crv</p>
             </div>
 
 
             <div className='flex flex-col items-center border-[3px] border-[#BF590A] rounded-md pt-[11px] pb-[83px] w-[25%]'>
-              <h4 className='font-[800] text-[18px] text-[#006400]'>Task Name</h4>
-              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-9'>Code 101</p>
-              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-2'>Code 101</p>
+              <h4 className='font-[800] text-[18px] text-[#006400]'>Date Updated</h4>
+              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-9'>02-10-2022</p>
+              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-2'>02-09-2022</p>
             </div>
 
             <div className='flex flex-col items-center border-[3px] border-[#BF590A] rounded-md pt-[11px] pb-[83px] w-[25%]'>
-              <h4 className='font-[800] text-[18px] text-[#006400]'>Task Name</h4>
-              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-9'>Code 101</p>
-              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-2'>Code 101</p>
+              <h4 className='font-[800] text-[18px] text-[#006400]'>Action</h4>
+              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-9'>Successful</p>
+              <p className='text-[17px] bg-[#006400] w-full text-center text-white py-1 mt-2'>Successful</p>
             </div>
           </div>
           <div>

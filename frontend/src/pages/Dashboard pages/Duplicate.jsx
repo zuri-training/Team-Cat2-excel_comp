@@ -35,12 +35,12 @@ const Duplicate = () => {
         </div>
         <div>
           <div>
-            <button>Clear</button>
-            <img src={duplicate} alt="" />
+            <button className='bg-[#006400] py-2 px-4 rounded-lg text-white ml-[910px] mb-4'>Clear</button>
+            <img className='w-[1002px] mb-12' src={duplicate} alt="" />
           </div>
           <div>
-            <button>Save</button>
-            <button>Download</button>
+            <button className='bg-[#d3d3d4] py-2 px-4 rounded-lg'>Save</button>
+            <button className='bg-[#006400] py-2 px-4 rounded-lg text-white ml-[800px]'>Download</button>
           </div>
         </div>
       
