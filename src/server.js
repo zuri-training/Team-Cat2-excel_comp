@@ -1,6 +1,11 @@
 const express = require('express');
-const connectDB = require('./src/db/database');
+const connectDB = require('./db/database');
+const userRoutes = require('./routes/userRoute');
 const { PORT } = process.env;
+
+// const bodyparser = require('body-parser');
+// app.use(bodyparser.urlencoded({ extended: true }));
+// app.use(bodyparser.json({limit: '10mb'}));
 
 require('dotenv').config();
 
@@ -9,6 +14,8 @@ connectDB;
 
 // Initialize express
 const app = express();
+
+app.use('/api/auth', userRoutes);
 
 // Initialize middleware
 app.use(express.json({extended: false }));

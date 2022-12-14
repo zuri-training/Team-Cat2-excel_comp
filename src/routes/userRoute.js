@@ -1,12 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const { check } = require("express-validator");
-const auth = require('../middleware');
+const auth = require('../middleware/auth');
 
 // import router controller
 const usersController = require("../controllers/usersController");
 
 // User aunthentication
+router.post("/signup", usersController.registerNewUser);
+
 router.post("/api/auth/login",
   [
     check("email", "Please enter a valid email").isEmail,

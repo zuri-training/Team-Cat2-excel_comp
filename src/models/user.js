@@ -18,22 +18,22 @@ const userSchema = mongoose.Schema(
         email: {
             type: String,
             required: true,
-            unique: true
+            // unique: true
         },
         password: {
             type: String,
             required: true
         },
-        confirmPassword: {
-            type: String,
-            required: true
-        },
+        // confirmPassword: {
+        //     type: String,
+        //     required: true
+        // },
     },
     {
         timestamps: true
     }
 );
 
-const user = mongoose.model('user', userSchema)
+const User = mongoose.model('User', userSchema);
 
-module.exports = user;
+module.exports = User;
