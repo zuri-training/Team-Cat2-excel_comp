@@ -17,7 +17,15 @@ import Error from './pages/Error'
 import Duplicate from './pages/Dashboard pages/Duplicate'
 
 
-const App = () => {
+function App() {
+  const [data, setData] =  React.useState(null);
+
+  React.useEffect(() => {
+    fetch('/api')
+    .then(res => res.json())
+    .then(data => setData(data.message));
+  }, []);
+
   return (
     <Routes>
       <Route path="/" element ={<Home/>} />
@@ -43,8 +51,8 @@ const App = () => {
         </Route>
       
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
 
