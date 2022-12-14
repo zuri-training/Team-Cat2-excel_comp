@@ -4,18 +4,19 @@
  */
 
 const mongoose = require('mongoose');
-const { MONGO_URI } = process.env;
+const { config } = require('dotenv');
 
-require('dotenv').config();
+mongoose.set('strictQuery', false);
+
+config();
+
 
 // Async mongoose connection
-const connectDB = async () => {
+async function connectDB(uri) {
     try {
-        mongoose.connect(MONGO_URI, {
+        await mongoose.connect(uri || process.env.MONGO_URI, {
             useNewUrlParser: true,
-            useCreateIndex: true,
             useUnifiedTopology: true,
-            useFindAndModify: false
         });
         console.log('MongoDB connected...')
 
@@ -27,21 +28,4 @@ const connectDB = async () => {
 
 module.exports = connectDB;
 
-// Create connection function
-// const connectDB = () => {
-//     mongoose.connect(MONGO_URI, {
-//         useNewUrlParser: true,
-//         useCreateIndex: true,
-//         useUnifiedTopology: true,
-//         useFindAndModify: false
-//     })
-//     .then(() => {
-//         console.log('MongoDB connected...');
-//     })
-//     .catch((err) => {
-//         console.log(err.message);
-
-//         process.exit(1);
-//     })
-// }
 
