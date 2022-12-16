@@ -1,15 +1,9 @@
-/**
- * Create a connection function for mongodb
- * Start local mongodb server connection
- */
-
 const mongoose = require('mongoose');
 const { config } = require('dotenv');
 
 mongoose.set('strictQuery', false);
 
 config();
-
 
 // Async mongoose connection
 async function connectDB(uri) {
@@ -18,7 +12,7 @@ async function connectDB(uri) {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-        console.log('MongoDB connected...')
+        console.log('MongoDB connected successfully...')
 
     } catch (err) {
         console.error(err.message);
