@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require('cors');
+const jwt = require('jsonwebtoken');
 const connectDB = require("./db/database");
 const authRoutes = require("./routes/authRoute");
 const { PORT } = process.env;
