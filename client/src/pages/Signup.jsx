@@ -10,6 +10,7 @@ import { useState } from 'react'
 const Signup = () => {
 const [showpassword, setShowPassword] = useState(false)
 
+
   return (
     <div>
       <Navbar/>
@@ -56,7 +57,7 @@ const [showpassword, setShowPassword] = useState(false)
             </div>
             
           </div>
-        </form>
+        
         <div className='mb-4'>
           <button className='bg-[#006400]  w-[500px] h-[50px] text-white mt-[53px]'>Create Account</button>
           <p className='text-center mt-6'>Already have an account? 
@@ -66,11 +67,13 @@ const [showpassword, setShowPassword] = useState(false)
           
           </p>
         </div>
+        </form>
       </div>
       </div>
      
     </div>
   )
 }
+
 
 export default Signup

@@ -77,6 +77,9 @@ exports.registerNewUser = (req, res) => {
     })
 }
 
+exports.getRegisteredUser = async (req, res) => {
+    res.render('register')
+}
 
 exports.getLoggedInUser = async (req, res) => {
     try {
