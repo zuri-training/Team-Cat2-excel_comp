@@ -18,6 +18,7 @@ import Duplicate from './pages/Dashboard pages/Duplicate'
 
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [data, setData] =  React.useState(null);
 
   React.useEffect(() => {

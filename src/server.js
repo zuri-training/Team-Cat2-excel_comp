@@ -12,7 +12,6 @@ require("dotenv").config();
 // Connect to database
 connectDB();
 
-
 // Initialize express
 const app = express();
 
@@ -26,9 +25,14 @@ app.use('/auth', authRoutes);
 
 app.use(cors());
 
-
-app.use(express.static(path.resolve(__dirname, '../frontend/src/components')))
-// app.use(express.static("frontend/public"));
+if (process.env.NODE_ENV === 'production') {
+  //*Set static folder
+  app.use(express.static('frontend/public'));
+  
+  app.get('*', (req, res) => 
+    res.sendFile(path.resolve(__dirname, 'frontend', 'public', 'index.html'))
+  );
+}
 
 // Create express route 
 app.get("/api", (req, res) =>
@@ -37,9 +41,6 @@ app.get("/api", (req, res) =>
   })
 );
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend/public', 'index.html'))
-})
 
 //PORT
 const port = process.env.PORT || PORT;

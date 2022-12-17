@@ -9,7 +9,7 @@ module.exports = (req, res, next) => {
     return res
     .status(401)
     .json({ 
-        statusCose: 401, message: 'No token, authourization denied'
+        statusCode: 401, message: 'No token, authourization denied'
     });
     try {
         const decoded = jwt.verify(token, SECRET);

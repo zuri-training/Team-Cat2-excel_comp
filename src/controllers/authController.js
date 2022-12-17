@@ -1,4 +1,3 @@
-// const User = ('../models/user');
 const User = require('../models/user');
 const { validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
@@ -8,33 +7,21 @@ const { SECRET } = process.env;
 const expiry = 36000;
 
 
+const handleErrors = (err) => {
+    console.log(err.message, err.code);
+    let error = { email: '', password: '' };
 
-// module.exports.signup_get = (req, res) => {
-//     res.render('signup');
-// }
+    //validation errors
+    if (err.message.includes('User validation failed')) {
+        console.log(err);
+    }
+}
 
-// module.exports.login_get = (req, res) => {
-//     res.render('login');
-// }
-
-// module.exports.signup_post = (req, res) => {
-//     const {  email, password } = req.body;
-//     console.log( email, password);
-//     res.send('new signup');
-// }
-
-// module.exports.login_post = (req, res) => {
-//     const { email, password } = req.body;
-//     console.log(email, password);
-//     res.send('user login');
-// }
-
-
-
-
+// User Sign up
 exports.registerNewUser = (req, res) => {
     User.findOne ({ email: req.body.email }, (err, existingUser) => {
         if (err) {
+            const errors = handleErrors(err);
             return res.status(500).json({ err })
         }
         if (existingUser) {
@@ -158,19 +145,3 @@ exports.loginUser = async (req, res) => {
         res.status(500).send('Server Error');
     }
 }
-
-// exports.loginUser = (req, res) => {
-//     User.findOne({ email: req.body.email }, (err, foundUser) => {
-//         if (err) {
-//             return res.status(500).json({ err })
-//         }
-//         if (!foundUser) {
-//             return res.status(401).json({ 
-//                 status: 401, 
-//                 message: 'Invalid Email/Password' 
-//             });
-//         } 
-//         const match = bcrypt.compareSync(req.body.password,foundUser.password);
-//             return res.json({ match })
-//     })
-// }
