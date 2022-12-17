@@ -9,19 +9,21 @@ const expiry = 36000;
 
 const handleErrors = (err) => {
     console.log(err.message, err.code);
-    let error = { email: '', password: '' };
+    let errors = { firstName: '', lastName: '', email: '', password: '' };
 
     //validation errors
     if (err.message.includes('User validation failed')) {
-        console.log(err);
+        Object.values(err.errors).forEach(({properties}) => {
+            errors[properties.path] = properties.message;
+        });
     }
+    return errors;
 }
 
 // User Sign up
 exports.registerNewUser = (req, res) => {
     User.findOne ({ email: req.body.email }, (err, existingUser) => {
         if (err) {
-            const errors = handleErrors(err);
             return res.status(500).json({ err })
         }
         if (existingUser) {
@@ -37,7 +39,8 @@ exports.registerNewUser = (req, res) => {
             password: req.body.password
         }, (err, newUser) => {
             if (err) {
-                return res.status(500).json({ err })
+                const errors = handleErrors(err);
+                return res.status(500).json({ errors })
             }
             bcrypt.genSalt(10, (err, salt) => {
                 if (err) {
