@@ -26,7 +26,7 @@ function App() {
     .then(res => res.json())
     .then(data => setData(data.message));
   }, []);
-
+  
   return (
     <Routes>
       <Route path="/" element ={<Home/>} />

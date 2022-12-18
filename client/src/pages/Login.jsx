@@ -15,22 +15,56 @@ const Login = () => {
 
   const navigate = useNavigate()
 
-
-const handleSubmit =  async (e) => {
+  const handleSubmit =  async (e) => {
     e.preventDefault();
-    console.log(email, password);
+    // console.log(email, password);
     navigate("/account/dashboard");
 
     try {
-      const res = await fetch('http://localhost/auth/login', {
+      const res = await fetch('http://localhost:4040/auth/login', {
+        mode: 'no-cors',
         method: 'POST',
         body: JSON.stringify({ email, password }),
-        headers: { 'content-Type': 'application/json' }
-      })
+        headers: { 'content-type': 'application/json' }
+      });
+      const data = await res.json();
+      console.log(data);
     }
     catch (err) {
       console.log(err);
     }
+
+    // if (!email || !password) {
+    //   alert('All fields are required');
+    //   return;
+    // }
+    
+    // let userObj = {
+    //   email,
+    //   password
+    // };
+
+    // fetchAPI(userObj, 'login', 'POST')
+    // .then(data => {
+    //   console.log(data);
+    // });
+    
+  // const API = 'http://localhost:4040/auth';
+
+  // async function fetchAPI(data, endpoint, method) {
+  //   try {
+  //     const res = await fetch(`${API}/${endpoint}`, {
+  //       method: 'POST',
+  //       mode: 'no-cors',
+  //       body: JSON.stringify(data),
+  //       headers: { 'content-type': 'application/json' }
+  //     })
+  //     const result = await res.json();
+  //     return result;
+  //   } catch (err) {
+      
+  //   }
+  // }
   }
 
   return (
@@ -50,32 +84,6 @@ const handleSubmit =  async (e) => {
             <FcGoogle />
             <p className='ml-4 text-center cursor-pointer'>Login with Google</p>
           </div>
-
-          {/* 
-          <div className='mb-7'>
-            <h2>Email Address</h2>
-          
-            <input className='border-2  px-8 py-2 w-[500px] h-[50px] placeholder:text-xs' type="email" placeholder='example@gmail.com' />
-          </div>
-          <div className='mb-7'>
-                  <h2>Password</h2>
-              <div className=' w-[500px] h-[50px] flex items-center relative'>
-                  <input className='border-2  h-[50px] pl-8 w-[100%]' type={showpassword ?"text":"password"} placeholder='**********' />
-                  {showpassword ? <AiFillEyeInvisible className='w-[10%] absolute right-4 cursor-pointer' onClick={()=>setShowPassword(!showpassword)} /> : <AiFillEye className='w-[10%] absolute right-4 cursor-pointer' onClick={()=>setShowPassword(!showpassword)} /> }
-              </div>
-              <div className='mb-4'>
-                
-                <button className='bg-[#006400]  w-[500px] h-[50px] text-white mt-[53px]'>Create Account</button>
-                <p className='text-center mt-6'>Forgot Password? 
-                <Link to='/password' className='underline text-[#006400] ml-2'>
-                Reset Password
-                </Link> </p>
-              </div>
-            </div>
- */}
-
-
-
 
           <form onSubmit={handleSubmit}>
             <div className='mb-7 flex flex-col'>
