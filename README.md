@@ -123,7 +123,7 @@ View [Documentation](#documentation) for more.
 
 - [Figma](https://www.figma.com/file/DehtcTUqJCW8suCU0PefW6/TeamCat2-LoFi-and-HiFi-Design?node-id=2%3A1224)
 - [Data Schema](https://docs.google.com/document/d/11itXgR0bVN7G6St82LZl_3ehv8RApO0uYZAhCXEpB-M/edit)
-- [Live Site](https://komparexl.onrender.com)
+- [Live Site](https://komparexl-17bc.onrender.com)
 
 
 ## Documentation
