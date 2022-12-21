@@ -5,7 +5,7 @@ import {FcGoogle} from 'react-icons/fc'
 import {Link} from 'react-router-dom'
 import {AiFillEyeInvisible,AiFillEye} from 'react-icons/ai'
 import { useState } from 'react'
-import axios from "axios"
+// import axios from "axios"
 
 
 const Signup = () => {
